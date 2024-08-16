@@ -1,20 +1,20 @@
 import { TfiStatsUp } from 'react-icons/tfi'
 
-type Props<T> = {
+type Props = {
   title: string
-  icon: React.ReactElement<T>
+  icon: React.ReactElement
   value: number
   percentage: number
   past: string
 }
 
-export default function StatCard<T>({
+export default function StatCard({
   title,
   icon,
   value,
   percentage,
   past,
-}: Props<T>) {
+}: Props) {
   return (
     <div className="rounded bg-white p-5">
       <div className="flex flex-row justify-between">
